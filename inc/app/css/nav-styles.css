@@ -1,0 +1,77 @@
+html header {
+    position: relative;
+    background-image: url("/inc/img/bg.png"), url("/inc/img/low/bg.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position-y: top;
+    height: 450px;
+    width: 100%;
+    top: 0;
+}
+html nav {
+    top: 48px;
+    padding-left: 23% !important;
+}
+html .bg-light {
+    background-color: #dddded !important;
+}
+html nav > .navbar-brand > img {
+    position: absolute;
+    left: calc(23% - 250px);
+    top: -20px;
+    width: 300px;
+    z-index: 5;
+}
+html nav .collapse > ul {
+    -webkit-background: linear-gradient(to left, #49ae34, #328eee);
+    -moz-background: linear-gradient(to left, #49ae34, #328eee);
+    background: linear-gradient(to left, #49ae34, #328eee);
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    width: 800px;
+    z-index: 4;
+}
+html nav .collapse > ul .nav-link {
+    font-family: "GoodTimes";
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    letter-spacing: 2px;
+    z-index: 5;
+}
+html nav .collapse > ul .nav-link:hover {
+    -webkit-background: inherit;
+    -moz-background: inherit;
+    background: inherit;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 768px) {
+    html nav > .navbar-brand > img {
+        position: absolute !important;
+        margin-left: calc(50% - 50px) !important;
+        margin-top: -370px !important;
+    }
+    html nav {
+        top: 450px !important;
+        padding-left: 0 !important;
+    }
+    html nav .collapse > ul .nav-link {
+        text-align: center !important;
+        padding-left: 0 !important;
+    }
+    html body > .row {
+        padding-top: 200px;
+    }
+}

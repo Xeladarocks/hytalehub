@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "GoodTimes";
+    src: url("/inc/fonts/GoodTimes.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Penumbra-Bold";
+    src: url("/inc/fonts/PenumbraSerifStd/PenumbraSerifStd-Bold.otf") format("opentype");;
+}
+
+html body {
+    background-color: rgb(22, 33, 56);
+    overflow-x: hidden;
+}
+
+html body > .background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: -50px;
+    z-index: -99;
+    background-image: url("/inc/img/content-lower-3840.png");
+    background-size: 100% auto;
+    background-position: center 32px;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -120px 100px 20px #162138;
+}
+
+html body > .row {
+    margin-top: 50px;
+}
+
+html body > .row > div {
+    margin-top: 25px;
+}
+
+html body > .row .container {
+    border: 5px outset #328eee;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+html body > .row .container > .title {
+    padding-top: 10px;
+    font-family: "Penumbra-Bold";
+    font-size: 36px;
+    text-align: center;
+    background: linear-gradient(#ffe98d, #e19f27);
+    -webkit-background: linear-gradient(#ffe98d, #e19f27);
+    -moz-background: linear-gradient(#ffe98d, #e19f27);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    color: #ecbc62;
+}
+
+body > .row .container > .body {
+    font-size: 24px;
+    color: #b7cedd;
+    text-align: justify;
+    text-indent: 50px;
+}
